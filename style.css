@@ -1,0 +1,1424 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+img {
+    max-width: 100%;
+    height: auto;
+    
+}
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.top {
+    background-image: url(images/pozadina6.jpg);
+    font-family: 'Montserrat', sans-serif;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 95vh;
+    overflow: hidden;
+    animation: 0.5s 1 tophidden;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+
+
+@keyframes tophidden {
+    0% {
+        overflow: hidden;
+    }
+
+    100% {
+        overflow: visible;
+    }
+}
+
+.toponama {
+    font-family: 'Montserrat', sans-serif;
+    background-attachment: scroll;
+    background-size: cover;
+}
+.color {
+    background-color: rgba(0, 0, 0, 0.1);
+    
+}
+
+.nav {
+    justify-content: space-between;
+    display: flex;
+    padding: 15px 0;
+    margin-left: 450px;
+    
+    
+    
+}
+
+.nav ul {
+    
+    margin-top: 15px;
+    list-style: none;
+    margin-left: -5000px;
+    animation: 3s 1 nav1;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+    display: flex;
+}
+
+@keyframes nav1 {
+    0% {
+        margin-left: -5000px;
+    }
+
+    100% {
+        margin-left: -250px;
+    }
+}
+
+
+.nav ul li a {
+    padding: 10px 60px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 0 10px;
+    font-weight: 400;
+    
+}
+
+.nav ul li a:link,
+.nav ul li a:visited {
+    color: #313131;
+    border-bottom: 1px solid #f0be1a;
+    transition: 1s ease all;
+    border-radius: 8px;
+    
+}
+.nav ul li a:hover {
+    background-color: #313131;
+    color: #d4af37 ;
+    border: 1px solid #313131;
+    border-radius: 15px;
+    
+}
+.nav ul li a:active { 
+    color: #d4af37 ;
+    margin-top: 10px;
+}
+
+.top .text {
+    text-align: center;
+    opacity: 0;
+    text-transform: uppercase;
+    animation: 2.5s 1 toptext;
+    animation-fill-mode: forwards;
+    margin-top: -100px;
+}
+
+@keyframes toptext {
+    0% {
+        opacity: 0;
+        margin-top: -100px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 90px;
+    }
+
+}
+
+
+.top h1 {
+    font-size: 60px;
+    color: #313131;
+}
+.top p {
+    font-size: 30px;
+    color: #313131;
+}
+
+#enistop {
+    opacity: 0;
+    animation: 1s 1 enistop;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    font-weight: 600;
+}
+
+@keyframes enistop {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.header {
+    
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: -180px;
+    padding: 5px 0;
+    animation: 2.5s 1 ease podnaslov;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-delay: 1.5s;
+    font-size: 22px;
+}
+
+@keyframes podnaslov {
+    0% {
+        opacity: 0;
+        margin-top: -100px;
+    }
+
+    100% {
+        margin-top: -30px;
+        opacity: 1;
+    }
+}
+
+
+.header h2 {
+    background-color: #313131;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+}  
+.center {
+    background-color: #313131;
+    padding-bottom: 30px;
+   
+}
+.slike {
+    padding: 0%;
+    margin: 0;
+}
+
+.sliketext {
+    width: 600px;
+    margin-left: 60px;
+    margin-top: -8px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.sliketext h2 {
+    font-size: 32px;
+    margin-top: 0;
+    color: #887229;
+    text-transform: uppercase;
+    
+}
+
+.slike {
+    
+    display: flex;
+} 
+.centertext {
+    color: #d4af375b;
+    text-align: center;
+    padding: 40px 0 0;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    
+    
+}
+.centertext1 {
+    color: #887229 ;
+    text-align: center;
+    padding: 0 0 5px;
+    font-size: 44px;
+    border-bottom: 1px dashed #887229 ;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.bttn {
+    text-align: center;
+    margin-top: 80px;
+    
+}
+.bttn a {
+    list-style: none;
+    text-decoration: none;
+    padding: 15px 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+
+    
+    
+}
+.bttn a:link,
+.bttn a:visited {
+    color: #fff;
+    border-bottom: 1px solid #d4af37;
+    transition: 1s ease all;
+    border-radius: 10px;
+}
+.bttn a:hover {
+    background-color: rgba(255, 255, 255, 0.137);
+    color: #d4af37;
+    border: #fff;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.sliketext .bttn {
+    text-align: left;
+}
+.bottom {
+    background-color: #313131;
+    padding-top: 20px;
+    justify-content: space-between;
+    
+}
+.bottom .container {
+    border-top: 1px dashed #d4af37;
+    width: 1200px;
+    margin: 0 auto;
+   
+    font-family: 'Montserrat', sans-serif;
+}
+.centerbottom {
+    display: flex;
+
+}
+.bottomtext {
+   
+   margin-left: 175px;
+   color: #fff;
+   padding: 0;
+   
+}
+.bottomtext h2 {
+    color: #887229;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 0;
+    margin-top: 30px;
+}
+.bottomslika {
+    margin: 40px 0;
+    
+}
+
+.footer {
+    background-color: #b6b2b275;
+    color: #313131;
+    font-family: 'Montserrat', sans-serif;
+    
+    
+}
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+.footer h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    border-bottom: 1px solid #d4af37;
+    
+}
+.logofooter {
+    margin: 20px 0;
+}
+.kontakt {
+    flex-basis: 15%;
+}
+
+.usluge {
+    flex-basis: 15%;
+}
+
+
+.icons {
+    display: flex;
+    column-gap: 25px;
+}
+.icon {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 26px;
+    color: #fff;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+    transition-property: 
+    outline-offset, outline-color,
+    background-color;
+    transition-duration: .25s;
+}
+.icon:hover {
+    outline-offset: 4px;
+}
+.icon:hover i {
+    animation: shake .25s;
+}
+.icon--instagram:hover {
+    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    outline-color: #a02d76
+}
+.icon--facebook:hover {
+    background-color: #3b5998;
+    outline-color: #3b5998
+}
+@keyframes shake {
+    10%{transform: rotate(15deg);}
+    20%{transform: rotate(-15deg);}
+    30%{transform: rotate(15deg);}
+    40%{transform: rotate(-15deg);}
+}
+.icons {
+    margin-top: -10px;
+    margin-left: 90px;
+}
+.iconsfb {
+    margin-top: -10px;
+    margin-left: 15px;
+}
+.ikonice {
+    display: flex;
+    
+}
+
+
+
+
+/*o nama stranica*/
+.navigacija {
+    justify-content: space-between;
+    display: flex;
+    padding: 15px 0 0 0;
+    margin-left: 450px;
+    
+}
+
+.navigacija ul {
+    margin-top: 15px;
+    list-style: none;
+    margin-right: -900px;
+    display: flex;
+    animation: 3s 1 nav2;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+   
+}
+
+@keyframes nav2 {
+    0% {
+        margin-right: -900px;
+    }
+
+    100% {
+        margin-right: 0px;
+    }
+}
+
+
+.navigacija ul li a {
+    padding: 10px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: 400;
+   
+
+}
+
+.navigacija ul li a:link,
+.navigacija ul li a:visited {
+    color: #313131;
+    border-bottom: 1px solid #f0be1a;
+    transition: 1s ease all;
+    border-radius: 8px;
+    
+}
+.navigacija ul li a:hover {
+    background-color: #313131;
+    color: #d4af37 ;
+    border: 1px solid #313131;
+    border-radius: 15px;
+    
+}
+.navigacija ul li a:active { 
+    color: #d4af37 ;
+    margin-top: 10px;
+}
+
+.toponama {
+    height: 500px;
+    background-image: url(images/pozadina7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center top;
+    
+   
+}
+#bottom1 .container {
+    border-top: none;
+    border-bottom: 1px dashed #d4af37;
+    padding-bottom: 50px;
+    display: flex;
+}
+.onama {
+    text-align: center;
+    font-size: 32px;
+    color: #313131;
+    margin: -140px 0;
+    animation: 3s 1 ease naslov1;
+   animation-fill-mode: forwards;
+   opacity: 0
+} 
+@keyframes naslov1 {
+    0% {
+        opacity: 0;
+        margin: -140px 0;
+    }
+    100% {
+        opacity: 1;
+        margin: 0;
+    }
+}
+
+
+.usluge1 {
+    background-color: #313131;
+    padding: 10px 0 0 0 ;
+    
+}
+.usluge1 .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 35px 0;
+}
+.usluge1 h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #887229;
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.eksterijer h3 {
+    color: #887229;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+#enis {
+    margin: auto 0;
+    
+}
+.bottom p {
+    width: 500px;
+    
+}
+#textbottom {
+    margin-left: 200px;
+    
+}
+
+
+
+/*prokekti stranica*/
+.topprojekti {
+    overflow: hidden;
+    background-image: url(images/pozadina7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 500px;
+}
+#hover {
+    color: #88722994;
+}
+.naslov {
+   text-align: center;
+   margin: -140px 0;
+   color: #313131;
+   font-size: 32px;
+   animation: 3s 1 ease naslov1;
+   animation-fill-mode: forwards;
+   opacity: 0;
+}
+@keyframes naslov1 {
+    0% {
+        opacity: 0;
+        margin: -140px 0;
+    }
+    100% {
+        opacity: 1;
+        margin: -20px 0;
+    }
+}
+
+
+
+.headerprojekti {
+    background-color: #313131;
+    color: #fff;
+    padding-bottom: 80px ;
+    
+}
+.headerprojekti h1 {
+   
+    text-align: center;
+}
+.projekti {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0;
+    margin-left: 2000px;
+   
+    animation: 3s 1 ease projekti;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes projekti {
+    0% {
+      
+        margin-left: 2000px;
+    }
+    100% {
+       
+        margin-left: 0;
+    }
+}
+.logo {
+    margin-left: -800px;
+    animation: 4s 1 logo;
+    animation-fill-mode: forwards;
+    margin-top: -30px;
+    margin-bottom: 0;
+}
+@keyframes logo {
+    0% {
+        margin-left: -900px;
+    }
+    100% {
+        margin-left: -550px;
+    }
+}
+.slikaprojekat {
+    opacity: 0;
+    transition: 1.5s ease;
+}
+.slikaprojekat:hover {
+    opacity: 1;
+}
+.projekattext {
+    color: #887229;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    margin-top: -180px;
+    width: 360px;
+}
+
+.background {
+    text-align: center;
+    background-color: #f1efef;
+    width: 360px;
+    height: 280px;
+    
+}
+
+/*revitalizacija*/
+.centar .container {
+    opacity: 0;
+    animation: 6s 1 centar;
+    animation-fill-mode: forwards;
+
+}
+@keyframes centar {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.revitalizacija {
+    overflow: hidden;
+    background-color: #b6b2b275 ;
+}
+.centar {
+    background-color: #313131;
+}
+.slika {
+    
+    padding-top: 20px;
+    display: flex;
+}
+.tekst {
+    padding-left: 30px;
+    color: #fff;
+}
+.tekst h2 {
+    color: #887229;
+}
+.slike {
+    justify-content: space-between;
+    margin-top: 50px ;
+    padding-bottom: 20px;
+}
+.slike1 {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.slike2 {
+    padding-bottom: 30px;
+    display: flex;
+    margin-top: 20px;
+    gap: 27px;
+}
+.slike12 {
+    padding-bottom: 30px;
+    display: flex;
+    gap: 27px;
+}
+
+#navbutton {
+    display: none;
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+        .top .container {
+            width: 700px;
+            height: 95vh;
+        }
+        #dobrodosli {
+            margin: 0;
+        }
+        
+        .top .container .nav {
+            width: 700px;
+            margin: auto 0;
+            text-align: center;
+        }
+        .nav ul {
+            margin-top: 15px;
+            list-style: none;
+            margin-left: -2000px;
+            animation: 3s 1 nav1;
+            animation-fill-mode: forwards;
+            animation-delay: 0.2s;
+        }
+        @keyframes nav1 {
+            0% {
+                margin-left: -2000px;
+            }
+        
+            100% {
+                margin-left: 120px;
+            }
+        }
+        .nav ul li a {
+            padding: 10px 10px;
+            font-size: 16px;
+        }
+        .center .container {
+            width: 700px;
+        }
+        .text img {
+            margin-top: 150px;
+        }
+        .header h2 {
+            font-size: 16px;
+            margin-top: -250px;
+        }
+        
+        .container .eksterijer {
+            margin-left: 5px;
+        }
+        
+        .slike img {
+            width: 280px;
+        }
+        .sliketext h2 {
+            font-size: 16px;
+            margin-top: 5px;
+        }
+        .bottom .container {
+            width: 700px;
+        }
+       
+        .bottomtext p {
+            width: 200px;
+            margin: 0;
+        }
+        .footer .container {
+            width: 700px;
+        }
+        #navbutton {
+            display: none;
+        }
+
+
+        .headerprojekti .container {
+            width: 700px;
+        }
+       
+        .projekti .projekat1 {
+           
+          text-align: center;
+          padding: 0;
+        }
+        .projekat1 .background {
+            width: 200px;
+           
+            
+        }
+        
+       
+        .topprojekti .navigacija {
+            width: 700px;
+            
+        }
+        .container  {
+            width: 700px;
+        }
+
+        .toponama .navigacija {
+            width: 700px ;
+            
+        }
+       
+        .navigacija img {
+            margin-left: -20px;
+            width: 300px;
+        }
+        .usluge .container {
+            justify-content: space-between;
+        }
+       
+        .onama h1 {
+            margin-top: 700px;
+            font-size: 50px;
+        }
+        /*topprojekti*/
+
+        .navigacija {
+            width: 300px;
+            margin-left: 50px;
+        }
+        .navigacija ul li a {
+            font-size: 16px;
+        }
+
+        .topprojekti .container {
+            width: 700px;
+            height: 100vh;
+        }   
+
+        
+        
+        .headerprojekti .container {
+            width: 700px;
+           
+        }   
+        .pozadina {
+            padding: 0;
+            
+        }
+        .projekattext p{
+            padding: 0;
+            margin: 0;
+        }
+       
+        .projekattext p {
+            font-size: 10px;
+            width: 180px;
+            margin-top: 80px;
+        }
+        
+      
+        .projekat1 {
+           
+            margin-bottom: 30px;
+            text-align: center;
+            width: 200px;
+           
+            
+        }
+        .background {
+            width: 200px;
+            margin: 0;
+        }
+        .headerprojekti {
+            height: 90vh;
+        }
+        #projekti1 {
+            margin-top: -100px;
+            
+        }
+        #projekti2 {
+            margin-top: -110px;
+            
+        }
+        .logo {
+            margin-left: -800px;
+            animation: 4s 1 logo;
+            animation-fill-mode: forwards;
+            margin-top: -30px;
+            margin-bottom: 0;
+        }
+        @keyframes logo {
+            0% {
+                margin-left: -900px;
+            }
+            100% {
+                margin-left: -150px;
+            }
+        }
+        .naslov h1 {
+            text-align: center;
+            margin-top: -140px ;
+            color: #313131;
+            font-size: 32px;
+            animation: 3s 1 ease naslov1;
+            animation-fill-mode: forwards;
+            opacity: 0;
+            font-size: 36px;
+         }
+         @keyframes naslov1 {
+             0% {
+                 opacity: 0;
+                 margin-top: -140px ;
+             }
+             100% {
+                 opacity: 1;
+                 margin-top: -650px ;
+             }
+         }
+        .background {
+            width: 240px;
+            height: 185px;
+        }
+      
+        /*projekat1*/
+
+        .centar .container {
+            width: 700px;
+            
+        }
+
+        .slika img{
+            width: 300px;
+            height: 169px;
+        }
+        .slika h2 {
+            font-size: 20px;
+        }
+        .tekst p {
+            font-size: 12px;
+        }
+        .slike img {
+            width: 200px;
+            height: 116px;
+            flex-wrap: nowrap;
+        }
+    }
+
+  
+
+
+
+
+
+    @media screen and (min-width:481px) and (max-width:768px) {
+        .top .container {
+            width: 450px;
+            
+            
+        }
+        #navbutton {
+            display: block;
+        }
+       
+        .nav {
+            width: 450px;
+            border: none;
+            margin: 0;
+            
+            
+        }
+        .top .container .nav ul {
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+    }
+    .header h2 {
+        font-size: 16px;
+        margin-top: 410px;
+        
+    }
+    .navigacija ul {
+        display: block;
+        
+    }
+    .navigacija {
+        margin-left: -500px;
+        
+    }
+    .navigacija ul li {
+        padding: 10px 0 0 0;
+       border-bottom: none;
+    }
+        .nav ul li {
+            margin-top: 20px;
+            
+        }
+
+        .nav ul li a:link,
+        .nav ul li a:visited {
+            border: none;
+        }
+        .nav ul {
+            margin-top: 15px;
+            list-style: none;
+            margin-left: -2000px;
+            animation: 2s 1 nav1;
+            animation-fill-mode: forwards;
+            animation-delay: 0.2s;
+        }
+        @keyframes nav1 {
+            0% {
+                margin-left: -2000px;
+            }
+        
+            100% {
+                margin-left: 100px;
+            }
+        }
+        #navmenu {
+            display: none;
+        }
+        
+        .slike {
+            display: block;
+            width: 130px;
+            text-align: center;
+           
+           
+        }
+        .sliketext h2 {
+            width: 90px;
+            margin: 10px 0;
+            font-size: 10px;
+            
+        }
+        .sliketext {
+            margin: 0;
+            display: none;
+            width: 450px;
+            
+        }
+        
+        
+        .center .container {
+            display: flex;
+            justify-content: space-between;
+            width: 450px;
+        }
+        
+        .bottom .container {
+            width: 450px;
+              text-align: center;
+        }
+        .centerbottom {
+            display: block;
+            
+        }
+        .bottomslika {
+            width: 240px;
+            margin-left: 100px;
+        }
+        .bottomtext {
+            margin-left: 85px;
+            padding-bottom: 30px;
+            
+        }
+       
+        .bottomtext p {
+            width: 270px;
+            font-size: 18px;
+            text-align: justify;
+            
+        }
+        .bottomtext h2 {
+            margin-left: 65px;
+        }
+       
+        .slike .bttn {
+            display: none;
+            
+           }
+        .bttn {
+            font-size: 12px;
+            margin: 0;
+           }
+        .footer .container {
+            width: 450px;
+        }
+        .ikonice {
+            margin-left: -35px;
+        }
+        .footer .kontakt h2 {
+            font-size: 18px;
+            display: inline-block;
+        }
+        .kontakt p {
+            font-size: 12px;
+        }
+        .usluge h2 {
+            font-size: 18px;
+        }
+        .usluge p {
+
+            font-size: 12px;
+        }
+
+        /*projekti*/
+
+        .topprojekti .container {
+            width: 450px;
+            height: 90vh;
+        }
+        .headerprojekti .container {
+            width: 450px;
+        }
+        .headerprojekti {
+            padding-bottom: 40px;
+        }
+        .naslov h1 {
+            font-size: 26px;
+            margin-top: -500px;
+            margin-left: 500px;
+            animation: 3s 1 naslov12;
+            animation-fill-mode: forwards;
+
+        }
+        @keyframes naslov12 {
+            0% {
+                margin-left: 500px;
+            }
+            100% {
+                margin-left: 0px;
+            }
+        }
+        .projekattext p {
+            display: none;
+         }
+         .projekti {
+             display: flex;
+             padding: 0;
+             padding-top: 20px;
+             
+             
+         }
+         
+         .projekat1 {
+             margin-top: 20px;
+             width: 140px;
+             height: 108px;
+             padding: 0;
+            
+         }
+        
+         .background {
+             background-color: none;
+             width: 140px;
+             height: 108px;
+         }
+         .slikaprojekat {
+             opacity: 1;
+         }
+        /*onama*/
+        .usluge1 .container {
+            width: 450px;
+            
+        }
+        .eksterijer {
+            width: 130px;
+        }
+        .onama h1 {
+            font-size: 36px;
+            margin-top: 110px;
+        }
+        .bottomtext h2 {
+            font-size: 28px;
+        }
+        .usluge1 h2 {
+            font-size: 28px;
+        }
+        .eksterijer h3 {
+            font-size: 12px;
+        }
+        .logo {
+            display: none;
+        }
+        .navigacija {
+            width: 300px;
+            margin-left: 150px;
+            display: block;
+            
+        }
+        .navigacija ul li  {
+            font-size: 12px;
+            
+        }
+        
+        
+        
+    }
+    @media screen and (min-width:300px) and (max-width:480px) {
+        * {
+            margin: 0;
+            padding: 0;
+            
+        }
+        
+        .container {
+            width: 290px;
+        }
+        .header h2 {
+            font-size: 16px;
+            margin-top: 365px;
+        }
+        .text img {
+            margin-top: 170px;
+            
+        }
+        #navbutton {
+            display: block;
+        }
+        #navmenu {
+            display: none;
+        }
+        .top .container .nav {
+            width: 290px;
+            margin: auto 0;
+            text-align: center;
+        }
+        .top .container .nav ul {
+            padding: 0;
+            margin: 0;
+            display: block;
+            
+            
+        }    
+
+        .nav ul {
+            margin-top: 15px;
+            list-style: none;
+            margin-left: -2000px;
+            animation: 2s 1 nav1;
+            animation-fill-mode: forwards;
+            animation-delay: 0.2s;
+        }
+        @keyframes nav1 {
+            0% {
+                margin-left: -2000px;
+            }
+        
+            100% {
+                margin-left: 80px;
+            }
+        }
+        .nav ul li {
+            padding: 10px 0;
+        }
+        .nav ul li a {
+            padding: 20px 10px;
+            font-size: 16px;
+        }
+        .nav ul li a:link,
+        .nav ul li a:visited {
+            border: none;
+        }
+        .top .container {
+            width: 290px;
+            height: 60vh;
+        }
+        .top .text {
+            width: 290px;
+        }
+        .slike .bttn {
+            display: none;
+        }
+        .sliketext  {
+            display: none;
+        }
+        .bottomslika {
+            width: 280px;
+        }
+        .bottom .container {
+            width: 290px;
+        }
+        .centerbottom  {
+            display: block;
+           
+
+        }
+        .header h2 {
+            margin-top: 300px;
+        }
+         .bottomtext {
+            margin-left: 10px;
+            padding-bottom: 30px;
+            width: 280px;
+        }
+        
+        #omeni {
+            margin-left: 55px;
+            padding-bottom: 10px;
+        }
+        .bottomtext p {
+            width: 270px;
+            font-size: 18px;
+            text-align: justify;
+            
+        }
+        .footer .container {
+            width: 290px;
+            display: block;
+        }
+        .kontakt {
+            padding-top: 10px;
+        }
+        .kontakt p {
+            padding: 10px 0;
+        }
+        .usluge p {
+            padding: 10px 0;
+        }
+        
+        /*onama*/ 
+        .toponama .container {
+            width: 290px;
+        }
+        .bottom .container {
+            width: 290px;
+            display: block;
+        }
+        .navigacija ul {
+            display: block;
+            
+        }
+        .navigacija {
+            margin-left: -500px;
+            
+        }
+        .navigacija ul li {
+            padding: 10px 0 0 0;
+           border-bottom: none;
+        }
+        
+        .onama h1 {
+            font-size: 32px;
+            margin-top: 100px;
+        }
+        .logo {
+            opacity: 0;
+        }
+        .usluge1 .container {
+            display: block;
+           
+        }
+        .eksterijer {
+            margin-bottom: 20px;
+
+        }
+        .eksterijer h3 {
+            font-size: 16px;
+        }
+        .usluge1 h2 {
+            font-size: 30px;
+            
+        }
+        .bottomtext {
+            text-align: center;
+        }
+        .bottomtext h2 {
+            font-size: 30px;
+            
+        }
+        .bottomtext p {
+            font-size: 12px;
+           
+        }
+        .footer {
+            text-align: center;
+        }
+        .ikonice {
+            margin-left: 20px;
+        }
+        
+         
+        
+        
+        /*projekti*/
+        .headerprojekti .container {
+            width: 290px;
+            
+        }
+        .headerprojekti {
+            padding-bottom: 30px;
+        }
+       
+        .naslov h1 {
+            font-size: 26px;
+            margin-top: 150px;
+        }
+        .projekattext p {
+           display: none;
+        }
+        .projekti {
+            display: block;
+            padding: 0;
+            padding-top: 20px;
+            
+            
+        }
+        .projekat1 {
+            margin-top: 20px;
+            width: 200px;
+            height: 155px;
+            margin-left: 50px;
+            padding: 0;
+           
+        }
+       
+        .background {
+            background-color: none;
+            width: 200px;
+            height: 155px;
+        }
+        .slikaprojekat {
+            opacity: 1;
+        }
+    }
